@@ -5,17 +5,17 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import Vue from "vue";
 
 export const FooBar = Vue.extend({
   computed: {
-    bar: function() {
+    bar: function (): string {
       return this.foo;
-    }
+    },
   },
-  data: function() {
+  data: function () {
     return {
-      foo: 'bar',
+      foo: "bar",
     };
   },
 });
